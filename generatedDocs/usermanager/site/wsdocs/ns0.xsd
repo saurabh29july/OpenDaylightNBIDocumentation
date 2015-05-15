@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="userConfig" type="userConfig"/>
+  <xs:complexType name="configurationObject" abstract="true"/>
+  <xs:complexType name="userConfig">
+    <xs:complexContent>
+      <xs:extension base="configurationObject">
+        <xs:sequence>
+          <xs:element name="roles" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="password" type="xs:string" minOccurs="0"/>
+          <xs:element name="user" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>

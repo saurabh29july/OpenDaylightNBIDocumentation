@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wadl:application xmlns:wadl="http://wadl.dev.java.net/2009/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <wadl:doc xmlns:enunciate="http://enunciate.codehaus.org/" enunciate:generatedBy="Enunciate-1.26.1"/>
+  <wadl:grammars>
+    <wadl:include href="ns0.xsd"/>
+  </wadl:grammars>
+  <wadl:resources base="http://localhost:8080/full">
+    <wadl:resource path="/controller/nb/v2/usermanager/users">
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Add a user]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:doc>
+            <![CDATA[the UserConfig user config structure in request body]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/xml" element="userConfig"/>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[Response as dictated by the HTTP Response Status code
+
+<pre>
+Example:
+
+Request URL:
+https://localhost/controller/nb/v2/usermanager/users
+
+Request body in XML:
+&lt;userConfig&gt;
+&lt;user&gt;testuser&lt;/user&gt;
+&lt;roles&gt;Network-Admin&lt;/roles&gt;
+&lt;password&gt;pass!23&lt;/password&gt;
+&lt;/userConfig&gt;
+
+Request body in JSON:
+{
+"user":"testuser",
+"password":"pass!23",
+"roles":[
+"Network-Admin"
+]
+}
+</pre>]]>
+          </wadl:doc>
+          <wadl:representation mediaType="*/*"/>
+          <wadl:representation mediaType="application/xml"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/controller/nb/v2/usermanager/users/{userName}">
+      <wadl:param name="userName" style="template"/>
+      <wadl:method name="DELETE">
+        <wadl:doc>
+          <![CDATA[Delete a user]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[Response as dictated by the HTTP Response Status code
+
+<pre>
+Example:
+
+Request URL:
+https://localhost/controller/nb/v2/usermanager/users/testuser
+
+</pre>]]>
+          </wadl:doc>
+          <wadl:representation mediaType="*/*"/>
+          <wadl:representation mediaType="application/xml"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+  </wadl:resources>
+</wadl:application>

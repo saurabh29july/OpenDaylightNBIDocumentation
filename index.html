@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>SDN{Geeks} | OpenDaylight REST NBI</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/agency.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="font-awesome-4.1.0/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700"
+	rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Kaushan+Script'
+	rel='stylesheet' type='text/css'>
+<link
+	href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic'
+	rel='stylesheet' type='text/css'>
+<link
+	href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700'
+	rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<a class="navbar-brand">OpenDaylight REST NBI</a>
+			</div>
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<!-- Services Section -->
+	<section id="page-top" class="bg-light-gray">
+		<div class="container">
+			<br />
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-heading">REST NBI's</h2>
+					<h3>Locate. Try. Develop</h3>
+					<p>Locate the REST API reference information for each of the
+						modules below. In each case you will find the detailed information
+						about the module's REST resources and their verbs (description,
+						URI, parameters, responses, and status codes), schemas, example
+						XML, example JSON, as well as programming examples.</p>
+					<br />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">&nbsp;</div>
+				<div class="col-md-6">
+					<ul class="list-group">
+						<li class="list-group-item"><a
+							href="generatedDocs/connectionmanager/site/wsdocs/index.html"
+							target="_blank"> Connection Manager </a></li>
+						<li class="list-group-item"><a
+							href="generatedDocs/containermanager/site/wsdocs/index.html"
+							target="_blank"> Container Manager</a></li>
+						<li class="list-group-item"><a
+							href="generatedDocs/controllermanager/site/wsdocs/index.html"
+							target="_blank"> Controller Manager</a></li>
+						<li class="list-group-item"><a
+							href="generatedDocs/flowprogrammer/site/wsdocs/index.html"
+							target="_blank"> Flow Programmer</a></li>
+						<li class="list-group-item"><a
+							href="generatedDocs/hosttracker/site/wsdocs/index.html"
+							target="_blank"> Host Tracker</a></li>
+						<li class="list-group-item"><a
+							href="generatedDocs/networkconfiguration/bridgedomain/site/wsdocs/index.html"
+							target="_blank"> Network Configuration: Bridge Domain</a></li>
+						<li class="list-group-item"><a
+							href="generatedDocs/networkconfiguration/neutron/site/wsdocs/index.html"
+							target="_blank"> Network Configuration: Neutron</a></li>
+						<li class="list-group-item"><a
+							href="generatedDocs/staticrouting/site/wsdocs/index.html"
+							target="_blank"> Static Routing</a></li>
+						<li class="list-group-item"><a
+							href="generatedDocs/statistics/site/wsdocs/index.html"
+							target="_blank"> Statistics</a></li>
+						<li class="list-group-item"><a
+							href="generatedDocs/subnets/site/wsdocs/index.html"
+							target="_blank"> Subnets</a></li>
+						<li class="list-group-item"><a
+							href="generatedDocs/switchmanager/site/wsdocs/index.html"
+							target="_blank"> Switch Manager</a></li>
+						<li class="list-group-item"><a
+							href="generatedDocs/topology/site/wsdocs/index.html"
+							target="_blank"> Topology</a></li>
+						<li class="list-group-item"><a
+							href="generatedDocs/usermanager/site/wsdocs/index.html"
+							target="_blank"> User Manager</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">&nbsp;</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Authentication Grid Section -->
+	<section id="authentication">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-heading">Authentication</h2>
+					<h3>How to get in?</h3>
+					<p>The OpenDaylight Controller provides HTTP Digest
+						authentication for Local users created on the Controller. The
+						Local user creation can only be done via the web graphical user
+						interface and these users can be given authorization to handle one
+						or more slices. The username/password created for an individual
+						user on the web graphical user interface can be used over the REST
+						API to access relevant resources.</p>
+					<br />
+					<p>Base64 Encoding JS Example: "Basic " + btoa("admin" + ":" +
+						"admin");</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Authentication Grid Section -->
+	<footer style="background: #222222;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<p>
+						<font color="#FEC503"> All this documentation has been taken
+							from OpenDaylight Wiki's and liked with static content generated
+							while building Hydrogen. <br /> Beware! Some of the parameters,
+							urls, models might not be applicable
+						</font>
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<footer class="bg-light-gray">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<span class="copyright">Hosted By | SDN{Geeks} </span>
+				</div>
+				<div class="col-md-4">
+					<ul class="list-inline social-buttons">
+						<li><a href="https://twitter.com/SDNGeeks" target="_blank"><i
+								class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.facebook.com/sdngeeks?ref=hl"
+							target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.linkedin.com/company/3544632"
+							target="_blank"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul class="list-inline quicklinks">
+						<li><a href="http://nivelsolutions.com" target="_blank">Unit
+								of Nivel Solutions Pvt. Ltd., Bangalore, India</a></li>
+						<!-- <li><a href="#">Terms of Use</a>
+                        </li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script
+		src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="js/classie.js"></script>
+	<!-- <script src="js/cbpAnimatedHeader.js"></script> -->
+
+	<!-- Contact Form JavaScript -->
+	<script src="js/jqBootstrapValidation.js"></script>
+	<script src="js/contact_me.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="js/agency.js"></script>
+
+</body>
+
+</html>
